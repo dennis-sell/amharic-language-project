@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 from bs4 import BeautifulSoup
+import xml
 import html
 import re
 import sys
@@ -24,14 +25,16 @@ def clean(text):
     if re_braces.search(text):
         text = re_braces.sub("", text)
     brackets = re_brackets.search(text)
-    if brackets:
-        while re_brackets.search(text):
-            text = re.sub("\[\[(.*?)\]\]", replace_brackets, text, re.S)
+    # if brackets:
+        # while re_brackets.search(text):
+            # text = re.sub("\[\[(.*?)\]\]", replace_brackets, text, re.S)
     return text
 
 def dump_page(page, out):
     page = html.unescape(page)
     soup = BeautifulSoup(page, "xml")
+    if soup.title.string == None:
+        return
     if ":" in soup.title.string:
         return
     print("%d: %s" % (pagec, soup.title.string))

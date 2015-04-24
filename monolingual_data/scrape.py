@@ -25,9 +25,11 @@ def clean(text):
     if re_braces.search(text):
         text = re_braces.sub("", text)
     brackets = re_brackets.search(text)
-    # if brackets:
-        # while re_brackets.search(text):
-            # text = re.sub("\[\[(.*?)\]\]", replace_brackets, text, re.S)
+    if brackets:
+        i = 0
+        while re_brackets.search(text) and i < 100:
+            text = re.sub("\[\[(.*?)\]\]", replace_brackets, text, re.S)
+            i +=1
     return text
 
 def dump_page(page, out):

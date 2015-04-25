@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import requests
 
 #starting url
-url = "https://bible.org/foreign/amharic/gen_toc.htm"
+url = "https://bible.org/foreign/amharic/exo_toc.htm"
 
 
 r  = requests.get(url)
@@ -19,9 +19,6 @@ for link in soup.find_all('a'):
     l = link.get('href')
     if l != None:
         links.append(l)
-
-# def clean(text):
-
 
 for link in links:
     r = requests.get("https://bible.org/foreign/amharic/" + link)

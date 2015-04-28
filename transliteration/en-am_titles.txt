@@ -15,7 +15,7 @@ Mengistu Lemma	መንግስቱ ለማ
 Indira Gandhi	ኢንድራ ጋንዲ
 Mikhail Aleksandrovich Sholokhov	ሚካኤል ሾሎኮቭ
 Anna Nagata	አና ናጋታ
-Usher (entertainer)	ኧሸር
+Usher	ኧሸር
 Jomo Kenyatta	ጆሞ ኬኒያታ
 Khalid Adem	ካሊድ አደም
 Birtukan Mideksa	ብርቱካን ሚዴቅሳ
@@ -40,8 +40,6 @@ Ernest Hemingway	ኧርነስት ሄሚንጔይ
 Diego Maradona	ማራዶና
 Abebe Aregai	አበበ አረጋይ
 Berhanu Nega	ዶ/ር ብርሃኑ ነጋ
-Michael Jackson	ማይክል ጃክሰን
-User:Realist2/MJ pre death	ማይክል ጃክሰን
 Robert Ehrlich	ሮበርት ኢርሊክ
 Meles Zenawi	መለስ ዜናዊ
 Tamirat Layne	ታምራት ላይኔ
@@ -61,7 +59,6 @@ Omar al-Bashir	ኦማር ሀሳን አህመድ አል-በሽር
 Ama Ata Aidoo	አማ አታ አዪዶ
 José Eduardo dos Santos	ሆዜ ኤድዋርዶ ዶስ ሳንቶስ
 Rabindranath Tagore	ራቢንድራናት ታጎር
-Tilahun Gessesse	ጥላሁን ገሠሠ
 Muhammad Yunus	ሙሃመድ ዩኑስ
 Ayi Kwei Armah	አዪ ኩዌ አርማህ
 Connie Francis	ኮኒ ፍራንሲስ
@@ -69,12 +66,10 @@ Ngugi wa Thiong'o	ንጉጊ ዋ ቲዮንጎ
 Muhammad Iqbal	አላማ ኢቅባል
 Heruy Welde Sellase	ኅሩይ ወልደሥላሴ (ብላቴን ጌታ)
 Mengistu Haile Mariam	መንግስቱ ኃይለ ማርያም
-Tsegaye Gabre-Medhin	ጸጋዬ ገብረ መድህን
 Tesfaye Gessesse	ተስፋዬ ገሠሠ
 Maxim Gorky	ማክሲም ጎርኪ
 Iyasu V of Ethiopia	እያሱ 5ኛ
 Wole Soyinka	ዎሌ ሾይንካ
-Abebe Bikila	አበበ ቢቂላ
 Mwai Kibaki	ሙአይ ኪባኪ
 Toni Morrison	ቶኒ ሞሪሰን
 Chinua Achebe	ቺኑዋ አቼቤ
@@ -82,15 +77,10 @@ Zewditu I of Ethiopia	ንግሥተ ነገሥታት ዘውዲቱ
 Asrat Woldeyes	አስራት ወልደየስ
 Hosni Mubarak	ሆስኒ ሙባረክ
 Gabriel García Márquez	ጋብሬል ጋርሺያ ማርኬዝ
-Milton Obote	ሚልተን ኦቦቴ
 Margaret Thatcher	ማርጋሬት ታቸር
 George H. W. Bush	ጆርጅ ኤች ቡሽ
-Amílcar Cabral	አሚልካር ካብራል
 Girma Wolde-Giorgis	ግርማ ወልደ ጊዮርጊስ
 Kenneth Kaunda	ኬኔት ካውንዳ
-Mengistu Lemma	መንግስቱ ለማ
 Daniel arap Moi	ዳንኤል አራፕ ሞይ
 Nadine Gordimer	ናዲን ጎርድመር
-Fahd of Saudi Arabia	ንጉስ ፋህድ
-Alex Haley	አሌክስ ሄሊይ
 Nelson Mandela	ኔልሰን ማንዴላ

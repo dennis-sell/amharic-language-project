@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import sys
 
 translator_string = """ ሀ   ሁ   ሂ   ሃ   ሄ   ህ   ሆ
    ha  hu  hi  ha  he  h ho
@@ -46,7 +47,7 @@ translator_string = """ ሀ   ሁ   ሂ   ሃ   ሄ   ህ   ሆ
    ዠ   ዡ   ዢ   ዣ   ዤ   ዥ   ዦ
    ʒe  ʒu  ʒi  ʒa  ʒe  ʒ    ʒo
    የ   ዩ   ዪ   ያ   ዬ   ይ   ዮ
-   je  ju  ji  ja  je  j    jo
+   je  ju  ji  ja  je  y    jo
    ደ   ዱ   ዲ   ዳ   ዴ   ድ   ዶ
    de  du  di  da  de  d    do
    ጀ   ጁ   ጂ   ጃ   ጄ   ጅ   ጆ
@@ -89,9 +90,7 @@ for x in range(int(len(words)/2)):
         en_to_am[en] = am
 
 
-# Test this out
-amharic_titles = [line.strip().split("\t")[1] for line in open("en-am_titles.txt", "r")]
-for title in amharic_titles:
-    english_word = "".join([am_to_en[c] if c in am_to_en else c for c in title])
-    print(english_word)
-
+#amharic_titles = [line.strip().split("\t")[1] for line in open("en-am_titles.txt", "r")]
+for input_line in sys.stdin:
+    english_word = "".join([am_to_en.get(c,c) for c in input_line])
+    print(english_word, end="")

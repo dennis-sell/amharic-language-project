@@ -43,14 +43,14 @@ translator_string = """ ሀ   ሁ   ሂ   ሃ   ሄ   ህ   ሆ
    a  u  i  a  e   ʔ   o
    ዘ   ዙ   ዚ   ዛ   ዜ   ዝ   ዞ
    ze  zu  zi  za  ze  z    zo
-       ዠ   ዡ   ዢ   ዣ   ዤ   ዥ   ዦ
+   ዠ   ዡ   ዢ   ዣ   ዤ   ዥ   ዦ
    ʒe  ʒu  ʒi  ʒa  ʒe  ʒ    ʒo
    የ   ዩ   ዪ   ያ   ዬ   ይ   ዮ
    je  ju  ji  ja  je  j    jo
    ደ   ዱ   ዲ   ዳ   ዴ   ድ   ዶ
    de  du  di  da  de  d    do
    ጀ   ጁ   ጂ   ጃ   ጄ   ጅ   ጆ
-   ʤe  ʤu  ʤi  ʤa  ʤe  ʤ    ʤo
+   je  ju  ji  ja  je  j    jo
    ገ   ጉ   ጊ   ጋ   ጌ   ግ   ጎ
    ge  gu  gi  ga  ge  g    go
     ጠ   ጡ   ጢ   ጣ   ጤ   ጥ   ጦ
@@ -74,7 +74,7 @@ translator_string = """ ሀ   ሁ   ሂ   ሃ   ሄ   ህ   ሆ
    ጓ   ጔ   ጕ   ሏ   ቧ   ዟ   ጧ   ሟ   ቷ   ዧ   ጯ   ሯ   ቿ
    gʷa gʷe gʷi lʷa bʷa zʷa t’ʷa    mʷa tʷa ʒʷa ʧ’ʷa    rʷa ʧʷa
    ጇ   ጿ   ሷ   ኗ   ዷ   ፏ   ሿ   ኟ   ፘ   ፙ   ፚ   ኧ
-   ʤʷa ts’ʷa   sʷa nʷa dʷa fʷa ʃʷa ɲʷa rʲa nʲa fʲa e"""
+   jʷa ts’ʷa   sʷa nʷa dʷa fʷa ʃʷa ɲʷa rʲa nʲa fʲa e"""
 
 lines = translator_string.split("\n")
 words = [line.split() for line in lines]
@@ -82,8 +82,8 @@ words = [line.split() for line in lines]
 am_to_en = {' ': ' '}
 en_to_am = {' ': ' '}
 for x in range(int(len(words)/2)):
-    amharic = words[x]
-    english = words[x+1]
+    amharic = words[2*x]
+    english = words[2*x+1]
     for am, en in zip(amharic, english):
         am_to_en[am] = en
         en_to_am[en] = am

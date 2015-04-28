@@ -93,16 +93,27 @@ http://www.cs.indiana.edu/~gasser/AfLaT12/#(1) (this one is syntax)
 http://www.mt-archive.info/10/LREC-2010-Gasser.pdf  
 
 #### Monolingual data
+We were able to scrape 2.5 MB of (relatively) clean text from the amharic wikipedia. This required parsing the wikipedia text out of the xml dump available online, and then cleaning the wikipedia text, which is essentially a markup language at first.
+ - amwiki-20150412-pages-articles.xml: data dump from wikipedia
+ - amharic_wiki_unclean.txt: Wikitext extracted from  xml
+ - amharic_wiki_clean.txt: Cleaned wikitext
+ - xml_extractor.py: Initial attempt, gets unclean text
+ - scrape.py: Script provided by friend. Cleans the wikipedia text
+
 
 #### Transliteration
 To start, I attempted to find bilingual data consisting of transliteration pairs. We extracted English-Amahric name pairs from [CCB's data](http://www.cis.upenn.edu/~ccb/data/transliteration/wikipedia\_names.gz), which were initially gathered from wikipedia. We extracted the english and amharic data and accounted for repeated data. This resulted in 86 name pairs, not enough for statistical transliteration model. We could not find other data sources, so we decided to make a simple non-statistical model from a informative source we found online (geez.xls). 
+ - transliterate.py: The transliteration script. Pipe amharic text into the script to get transliterated text out.
+ - geez.xls - Source on Amharic Abugida found online
+ - en-am_titles.txt: English and Amharic versions of names extracted from wikipedia
 
-The source contained a mapping from Amharic symbols to english syllables. We extraced and cleaned up the relevant data, replaced a few symbols from the IPA with english letters (i.e. "ʃ" ==> "sh"), etc. This is a simplistic method, but given the richness of Amharic syllables as compared to other Semitic writing systems like Arabic or Hebrew, this was unneeded.
+The source contained a mapping from Amharic symbols to english syllables. We extraced and cleaned up the relevant data, replaced a few symbols from the IPA with english letters (i.e. "ʃ" ==> "sh"), etc. This is a simplistic method, but given the richness of Amharic syllables as compared to other Semitic writing systems like Arabic or Hebrew, this was sufficient.
 
 Sample Output with Original English Names:
  - "Jerald Ford" ==> "Gerald Ford"
  - "Nelsen Mandela" ==> "Nelson Mandela"
  - "Hadis Alemajehu" ==> "Haddis Alemayehu"
+ - "Jose Eduardo Dos Santos" ==> "Hoze Edwardo Dos Santos"
 
 
 ####Twitter Presence

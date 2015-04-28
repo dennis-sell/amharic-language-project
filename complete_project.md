@@ -92,6 +92,19 @@ http://www.mica.edu.vn/sltu2012/files/proceedings/8.pdf (this one is stat MT)
 http://www.cs.indiana.edu/~gasser/AfLaT12/#(1) (this one is syntax)  
 http://www.mt-archive.info/10/LREC-2010-Gasser.pdf  
 
+#### Monolingual data
+
+#### Transliteration
+To start, I attempted to find bilingual data consisting of transliteration pairs. We extracted English-Amahric name pairs from [CCB's data](http://www.cis.upenn.edu/~ccb/data/transliteration/wikipedia\_names.gz), which were initially gathered from wikipedia. We extracted the english and amharic data and accounted for repeated data. This resulted in 86 name pairs, not enough for statistical transliteration model. We could not find other data sources, so we decided to make a simple non-statistical model from a informative source we found online (geez.xls). 
+
+The source contained a mapping from Amharic symbols to english syllables. We extraced and cleaned up the relevant data, replaced a few symbols from the IPA with english letters (i.e. "ʃ" ==> "sh"), etc. This is a simplistic method, but given the richness of Amharic syllables as compared to other Semitic writing systems like Arabic or Hebrew, this was unneeded.
+
+Sample Output with Original English Names:
+ - "Jerald Ford" ==> "Gerald Ford"
+ - "Nelsen Mandela" ==> "Nelson Mandela"
+ - "Hadis Alemajehu" ==> "Haddis Alemayehu"
+
+
 ####Twitter Presence
 Users of Amharic are concentrated in two regions of the wrold: Amhara and the United States. Given this context, two Twitter stream scrapes were run:
 #####Location Query
@@ -112,3 +125,4 @@ Though Twitter has a beta language recognition feature, it is not entirely relia
  - Tweets filtered out: Korean tweets that used Amharic characters for emojis
 
 These results were almost entirely without location data, and those that had them indicated locations in the United States. It is worth noting from these results that while 42 tweets over a 24 hour period is already an abysmally low number, it is relatively high compared to the normal rate of <5 per day. This fortuitous spike appears to be the result of Earth Day in comjuntion with political activity and violence in Ethiopia.
+

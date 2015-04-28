@@ -16,7 +16,7 @@ translator_string = """ ሀ   ሁ   ሂ   ሃ   ሄ   ህ   ሆ
    ሰ   ሱ   ሲ   ሳ   ሴ   ስ   ሶ
    se  su  si  sa  se  s so
    ሸ   ሹ   ሺ   ሻ   ሼ   ሽ    ሾ
-   ʃe  ʃu  ʃi  ʃa  ʃe  ʃ ʃo
+   she  shu  shi  sha  she  sh sho
    ቀ   ቁ   ቂ   ቃ   ቄ   ቅ    ቆ
    k’e k’u k’i k’a k’e k’ k’o
    በ   ቡ   ቢ   ባ   ቤ   ብ    ቦ
@@ -74,7 +74,7 @@ translator_string = """ ሀ   ሁ   ሂ   ሃ   ሄ   ህ   ሆ
    ጓ   ጔ   ጕ   ሏ   ቧ   ዟ   ጧ   ሟ   ቷ   ዧ   ጯ   ሯ   ቿ
    gʷa gʷe gʷi lʷa bʷa zʷa t’ʷa    mʷa tʷa ʒʷa ʧ’ʷa    rʷa ʧʷa
    ጇ   ጿ   ሷ   ኗ   ዷ   ፏ   ሿ   ኟ   ፘ   ፙ   ፚ   ኧ
-   jʷa ts’ʷa   sʷa nʷa dʷa fʷa ʃʷa ɲʷa rʲa nʲa fʲa e"""
+   jʷa ts’ʷa   sʷa nʷa dʷa fʷa shʷa ɲʷa rʲa nʲa fʲa e"""
 
 lines = translator_string.split("\n")
 words = [line.split() for line in lines]
@@ -92,6 +92,6 @@ for x in range(int(len(words)/2)):
 # Test this out
 amharic_titles = [line.strip().split("\t")[1] for line in open("en-am_titles.txt", "r")]
 for title in amharic_titles:
-    english_word = "".join([am_to_en[c] if c in am_to_en else "*" for c in title])
+    english_word = "".join([am_to_en[c] if c in am_to_en else c for c in title])
     print(english_word)
 

@@ -22,6 +22,10 @@ Sample Output with Original English Names:
  - "Jose Eduardo Dos Santos" ==> "Hoze Edwardo Dos Santos"
 
 
+####Language Identification
+ Due to the lack of large amounts of data available online for Amharic, it was not possible to write a language identification system using statistical methods. However, a very basic identifier, that primarily checks for correct characters was quite simple. The Ge'ez script used by Amharic is quite rare, and the only other languages that use it are Tigrinya, Tigre, and Blin (interestingly, some langauges, such as Oromo, used to use it, but have now switched to a Latin alphabet). Hence the obvious thing to do is to parse a given text and check that all, or nearly all, of the characters are of this alphabet. There are a handful of letter used in Tigrinya, Tigre, and Blin that are not used in Amharic, and so by looking for these characters it is possible to guess whether a Ge'ez text is Amharic, or one of the other three. The language_identifier.py script takes a text as input, and outputs 1 if the language is Amharic, 2 if it is Amharic-like (one of the other three Ge'ez language), and a 0 otherwise. The method used is obviously not perfect, as it is unable to determine if a given text is actually structured Amharic, or just a random sequence of Ge'ez characters. However, without enough data available, more advanced statistical language indentifier methods are not possible. 
+
+
 ####Twitter Presence
 Users of Amharic are concentrated in two regions of the wrold: Amhara and the United States. Given this context, two Twitter stream scrapes were run:
 #####Location Query
